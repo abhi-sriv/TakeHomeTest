@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CustomerInvitationViewController.swift
 //  TakeHomeTest
 //
 //  Created by Abhishek Srivastava on 03/02/19.
@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CustomerInvitationViewController: UIViewController {
 
+    let customerInvitationViewModel: CustomerInvitationViewModel = CustomerInvitationViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if let customerList = customerInvitationViewModel.getCustomerListModel() {
+            Utilities.debugPrint(customerList as Any)
+        }
     }
 
     override func didReceiveMemoryWarning() {
