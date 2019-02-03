@@ -54,14 +54,46 @@
 		46257F3A2206F12A00D9BC23 /* TakeHomeTest */ = {
 			isa = PBXGroup;
 			children = (
-				46257F3B2206F12A00D9BC23 /* AppDelegate.swift */,
-				46257F3D2206F12A00D9BC23 /* ViewController.swift */,
-				46257F3F2206F12A00D9BC23 /* Main.storyboard */,
-				46257F422206F13300D9BC23 /* Assets.xcassets */,
-				46257F442206F13300D9BC23 /* LaunchScreen.storyboard */,
-				46257F472206F13300D9BC23 /* Info.plist */,
+				46257F4F2206F19800D9BC23 /* AppDelegate */,
+				46257F4D2206F16400D9BC23 /* Controllers */,
+				46257F502206F1C000D9BC23 /* Resources */,
+				46257F4E2206F17800D9BC23 /* Views */,
 			);
 			path = TakeHomeTest;
+			sourceTree = "<group>";
+		};
+		46257F4D2206F16400D9BC23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46257F3D2206F12A00D9BC23 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		46257F4E2206F17800D9BC23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46257F3F2206F12A00D9BC23 /* Main.storyboard */,
+				46257F442206F13300D9BC23 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46257F4F2206F19800D9BC23 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				46257F3B2206F12A00D9BC23 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		46257F502206F1C000D9BC23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46257F472206F13300D9BC23 /* Info.plist */,
+				46257F422206F13300D9BC23 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39C8QF99WH;
-				INFOPLIST_FILE = TakeHomeTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TakeHomeTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39C8QF99WH;
-				INFOPLIST_FILE = TakeHomeTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TakeHomeTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
