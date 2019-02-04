@@ -15,8 +15,9 @@
 		46257F562207064200D9BC23 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 46257F552207064200D9BC23 /* test.json */; };
 		46257F5822070BFA00D9BC23 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F5722070BFA00D9BC23 /* Utilities.swift */; };
 		46257F5B22070CF000D9BC23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F5A22070CF000D9BC23 /* Constants.swift */; };
-		46257F62220722E900D9BC23 /* CustomerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F61220722E900D9BC23 /* CustomerListModel.swift */; };
+		46257F62220722E900D9BC23 /* CustomerInfoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F61220722E900D9BC23 /* CustomerInfoListModel.swift */; };
 		46257F662207253500D9BC23 /* CustomerInvitationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F652207253500D9BC23 /* CustomerInvitationViewModel.swift */; };
+		46257F692207474500D9BC23 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F682207474500D9BC23 /* DistanceCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		46257F552207064200D9BC23 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		46257F5722070BFA00D9BC23 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = TakeHomeTest/Managers/Utilities.swift; sourceTree = SOURCE_ROOT; };
 		46257F5A22070CF000D9BC23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		46257F61220722E900D9BC23 /* CustomerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListModel.swift; sourceTree = "<group>"; };
+		46257F61220722E900D9BC23 /* CustomerInfoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoListModel.swift; sourceTree = "<group>"; };
 		46257F652207253500D9BC23 /* CustomerInvitationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInvitationViewModel.swift; sourceTree = "<group>"; };
+		46257F682207474500D9BC23 /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				46257F5722070BFA00D9BC23 /* Utilities.swift */,
+				46257F682207474500D9BC23 /* DistanceCalculator.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 		46257F5C2207228400D9BC23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				46257F61220722E900D9BC23 /* CustomerListModel.swift */,
+				46257F61220722E900D9BC23 /* CustomerInfoListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,10 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46257F5B22070CF000D9BC23 /* Constants.swift in Sources */,
+				46257F692207474500D9BC23 /* DistanceCalculator.swift in Sources */,
 				46257F3E2206F12A00D9BC23 /* CustomerInvitationViewController.swift in Sources */,
 				46257F5822070BFA00D9BC23 /* Utilities.swift in Sources */,
 				46257F662207253500D9BC23 /* CustomerInvitationViewModel.swift in Sources */,
-				46257F62220722E900D9BC23 /* CustomerListModel.swift in Sources */,
+				46257F62220722E900D9BC23 /* CustomerInfoListModel.swift in Sources */,
 				46257F3C2206F12A00D9BC23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

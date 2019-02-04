@@ -9,18 +9,17 @@
 import Foundation
 
 
-struct CustomerListModel: Codable {
-    let customerList : [CustomerInfo]?
+struct CustomerInfoListModel: Codable {
+    let customerInfoList : [CustomerInfo]?
     
     enum CodingKeys: String, CodingKey {
-        case customerList = "data"
+        case customerInfoList = "data"
     }
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        customerList = try values.decodeIfPresent([CustomerInfo].self, forKey: .customerList)
+        customerInfoList = try values.decodeIfPresent([CustomerInfo].self, forKey: .customerInfoList)
     }
-    
 }
 
 struct CustomerInfo : Codable {
@@ -30,11 +29,10 @@ struct CustomerInfo : Codable {
     let longitude : String?
     
     enum CodingKeys: String, CodingKey {
-        
-        case latitude = "latitude"
-        case user_id = "user_id"
-        case name = "name"
-        case longitude = "longitude"
+        case latitude   = "latitude"
+        case user_id    = "user_id"
+        case name       = "name"
+        case longitude  = "longitude"
     }
     
     init(from decoder: Decoder) throws {
