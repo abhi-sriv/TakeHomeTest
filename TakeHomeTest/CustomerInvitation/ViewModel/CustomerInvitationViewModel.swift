@@ -20,8 +20,7 @@ class CustomerInvitationViewModel: NSObject {
     private func getCustomerList() {
         if let jsonData = Utilities.getDataFromJSONFile(forResource: "test", ofType: "json") {
             let jsonDecoder = JSONDecoder()
-            do
-            {
+            do {
                 self.customerListModel = try jsonDecoder.decode(CustomerInfoListModel.self, from: jsonData)
                 Utilities.debugPrint(self.customerListModel as Any)
             } catch {

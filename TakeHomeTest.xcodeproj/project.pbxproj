@@ -18,7 +18,18 @@
 		46257F62220722E900D9BC23 /* CustomerInfoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F61220722E900D9BC23 /* CustomerInfoListModel.swift */; };
 		46257F662207253500D9BC23 /* CustomerInvitationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F652207253500D9BC23 /* CustomerInvitationViewModel.swift */; };
 		46257F692207474500D9BC23 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46257F682207474500D9BC23 /* DistanceCalculator.swift */; };
+		F126C2FD220847F5004863E1 /* CustomerInvitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F126C2FC220847F5004863E1 /* CustomerInvitationTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F126C2F722084697004863E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46257F302206F12A00D9BC23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46257F372206F12A00D9BC23;
+			remoteInfo = TakeHomeTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		46257F382206F12A00D9BC23 /* TakeHomeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +45,20 @@
 		46257F61220722E900D9BC23 /* CustomerInfoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoListModel.swift; sourceTree = "<group>"; };
 		46257F652207253500D9BC23 /* CustomerInvitationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInvitationViewModel.swift; sourceTree = "<group>"; };
 		46257F682207474500D9BC23 /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		F126C2F222084696004863E1 /* TakeHomeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F126C2F622084697004863E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F126C2FC220847F5004863E1 /* CustomerInvitationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInvitationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		46257F352206F12A00D9BC23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F126C2EF22084696004863E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				46257F3A2206F12A00D9BC23 /* TakeHomeTest */,
+				F126C2F322084697004863E1 /* TakeHomeTestTests */,
 				46257F392206F12A00D9BC23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				46257F382206F12A00D9BC23 /* TakeHomeTest.app */,
+				F126C2F222084696004863E1 /* TakeHomeTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +185,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F126C2F322084697004863E1 /* TakeHomeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F126C2F622084697004863E1 /* Info.plist */,
+				F126C2FC220847F5004863E1 /* CustomerInvitationTests.swift */,
+			);
+			path = TakeHomeTestTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,18 +214,40 @@
 			productReference = 46257F382206F12A00D9BC23 /* TakeHomeTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F126C2F122084696004863E1 /* TakeHomeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F126C2FB22084697004863E1 /* Build configuration list for PBXNativeTarget "TakeHomeTestTests" */;
+			buildPhases = (
+				F126C2EE22084696004863E1 /* Sources */,
+				F126C2EF22084696004863E1 /* Frameworks */,
+				F126C2F022084696004863E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F126C2F822084697004863E1 /* PBXTargetDependency */,
+			);
+			name = TakeHomeTestTests;
+			productName = TakeHomeTestTests;
+			productReference = F126C2F222084696004863E1 /* TakeHomeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		46257F302206F12A00D9BC23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Abhishek Srivastava";
 				TargetAttributes = {
 					46257F372206F12A00D9BC23 = {
 						CreatedOnToolsVersion = 9.4;
+					};
+					F126C2F122084696004863E1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 46257F372206F12A00D9BC23;
 					};
 				};
 			};
@@ -211,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				46257F372206F12A00D9BC23 /* TakeHomeTest */,
+				F126C2F122084696004863E1 /* TakeHomeTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +279,13 @@
 				46257F562207064200D9BC23 /* test.json in Resources */,
 				46257F432206F13300D9BC23 /* Assets.xcassets in Resources */,
 				46257F412206F12A00D9BC23 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F126C2F022084696004863E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +306,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F126C2EE22084696004863E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F126C2FD220847F5004863E1 /* CustomerInvitationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F126C2F822084697004863E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46257F372206F12A00D9BC23 /* TakeHomeTest */;
+			targetProxy = F126C2F722084697004863E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		46257F3F2206F12A00D9BC23 /* Main.storyboard */ = {
@@ -416,6 +494,51 @@
 			};
 			name = Release;
 		};
+		F126C2F922084697004863E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26HBWAYR9G;
+				INFOPLIST_FILE = TakeHomeTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishek.TakeHomeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHomeTest.app/TakeHomeTest";
+			};
+			name = Debug;
+		};
+		F126C2FA22084697004863E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26HBWAYR9G;
+				INFOPLIST_FILE = TakeHomeTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishek.TakeHomeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHomeTest.app/TakeHomeTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -433,6 +556,15 @@
 			buildConfigurations = (
 				46257F4B2206F13400D9BC23 /* Debug */,
 				46257F4C2206F13400D9BC23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F126C2FB22084697004863E1 /* Build configuration list for PBXNativeTarget "TakeHomeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F126C2F922084697004863E1 /* Debug */,
+				F126C2FA22084697004863E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

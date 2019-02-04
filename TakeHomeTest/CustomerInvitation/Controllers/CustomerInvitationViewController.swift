@@ -31,7 +31,7 @@ class CustomerInvitationViewController: UIViewController {
     }
     
     @IBAction func getCustomersInARangeAction(_ sender: Any) {
-        if let customersList = customerInvitationViewModel.getCustomerListWithinADistance(inKM: 100.00) {
+        if let customersList = customerInvitationViewModel.getCustomerListWithinADistance(inKM: kCustomerIn100Km) {
             customerListTextView.text = ""
             for customerInfo in customersList {
                 customerListTextView.text = customerListTextView.text + String("Name: \(customerInfo.name ?? "Unknown"), UserID: \(String(customerInfo.user_id ?? 0)) \n")
